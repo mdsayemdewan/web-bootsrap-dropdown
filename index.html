@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootsrap Dropdown</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-sm bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#"><img  src="logo.png!sw800 "  alt="logo" width="40" height="40" class="rounded me-3"><span>E-Commerce</span></a>
+            
+            <div class="container d-flex ">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownWomen"
+                            data-bs-toggle="dropdown" aria-expanded="false" >
+                            Women's Fashion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownWomen">
+                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMen"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Men's Fashion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMen">
+                            <li><a class="dropdown-item" href="#">Shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Eye wear</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownSports" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sports & Outdoors
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownSports">
+                            <li><a class="dropdown-item" href="#">Cycling</a></li>
+                            <li><a class="dropdown-item" href="#">Camping & Hiking</a></li>
+                            <li><a class="dropdown-item" href="#">Dumbbells</a></li>
+                            <li><a class="dropdown-item" href="#">Team Sports</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-3 " type="search" placeholder="Search products" >
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+
 </body>
+
 </html>
